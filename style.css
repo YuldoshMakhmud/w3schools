@@ -9,11 +9,13 @@ body{
 .nav-bar .nav ul{
     display: flex;
     list-style: none;
+    justify-content: space-between;
+    width: 100%;
 }
 .nav-bar .nav ul .left{
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 40%;
     overflow: hidden;
 }
 .nav-bar .nav{
@@ -21,7 +23,6 @@ body{
 }
 
 .nav-bar .nav ul .left li:nth-child(1){
-border: 2px solid red;
 height: 50px;
 width: 50px;
 }
@@ -34,7 +35,6 @@ width: 50px;
     height: 100%;
     width: 120px;
     justify-content: center;
-    border: 2px solid red;
     margin-left: 3%;
     font-family: Open Sans;
     font-weight: bolder;
@@ -51,4 +51,89 @@ width: 50px;
 }
 .nav-bar .nav ul .left li:hover{
     background-color: #059862;
+    color: white;
+    transition-duration: 0.3;
 }
+.nav-bar .nav ul .left li:nth-child(1):hover{
+    background-color: transparent;
+}
+.nav-bar .nav .right{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+}
+.nav-bar .nav .right .icons {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+}
+.nav-bar .nav .right .icons i{
+    margin-left: 5%;
+}
+.nav-bar .nav .right .buttons{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav .right .buttons button{
+    height: 45px;
+    margin-left: 2%;
+    width: 150px;
+    border-radius: 75px 75px;
+    font-family:Open Sans;
+    font-weight:bolder;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.nav-bar .nav .right .buttons button:nth-child(1){
+width: 80px;
+background-color: #282a35;
+}
+.nav-bar .nav .right .buttons button:nth-child(2){
+    background-color: #ffb3bb;
+    color: black;
+}
+.nav-bar .nav .right .buttons button:nth-child(3){
+    background-color: #fff080;
+    color: black;
+}
+.nav-bar .nav .right .buttons button:last-child{
+    width: 100px;
+    background-color: #059862;
+}
+.navbar {
+    background-color:#28282b;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #45a049;
+  }
+
+  .navbar-right {
+    float: right;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a, .navbar-right {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar-right {
+      float: none;
+    }
+  }
